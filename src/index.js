@@ -47,6 +47,11 @@ const setRedTheme = () => {
     body.className = "red";
 };
 
+const setPurpleTheme = () => {
+    const body = document.getElementsByTagName("body")[0];
+    body.className = "purple";
+};
+
 // Function to register all event handlers (This is necessary because of how browsers work (aka DOMContentLoaded event))
 const registerEventHandlers = () => {
     const addCommentButton = document.getElementById("guestbook__button");
@@ -57,6 +62,8 @@ const registerEventHandlers = () => {
     document.getElementById("blue__button").addEventListener("click", setBlueTheme);
 
     document.getElementById("red__button").addEventListener("click", setRedTheme);
+
+    document.getElementById("purple__button").addEventListener("click", setPurpleTheme);
 };
 
 document.addEventListener("DOMContentLoaded", registerEventHandlers);

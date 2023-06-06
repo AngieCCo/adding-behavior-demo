@@ -61,6 +61,12 @@ body.red {
     background: linear-gradient(5deg, rgba(2,0,36,1) 0%, rgba(121,9,9,1) 35%, rgba(255,0,0,1) 100%);
 }
 
+body.purple {
+    background-image: none;
+    background: rgb(22, 17, 115);
+    background: linear-gradient(5deg, rgb(64, 18, 139) 0%, rgb(147, 54, 180) 35%, rgb(221, 88, 214) 100%);
+}
+
 .under-construction {
     text-align: center;
 }
@@ -134,6 +140,10 @@ quote::before, quote::after {
 
 #red__button {
     background-color: red;
+    transition: background-color .5s;
+}
+#purple__button {
+    background-color: purple;
     transition: background-color .5s;
 }
 
